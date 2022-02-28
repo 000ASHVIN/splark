@@ -28,7 +28,7 @@ class MainController extends Controller
         
         ob_start();
     
-        $v8->executeString('var process = { env: { VUE_ENV: "server", NODE_ENV: "production" }}; this.global = { process: process };');
+        $v8->executeString('var process = { env: { VUE_ENV: "server", NODE_ENV: "development" }}; this.global = { process: process };');
 
         $v8->executeString($renderer_source);
 

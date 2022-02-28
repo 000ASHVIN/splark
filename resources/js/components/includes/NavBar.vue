@@ -9,14 +9,15 @@
             <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
+                <router-link :to="{ name: 'home' }" class="nav-link">Home</router-link>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <router-link :to="{ name: 'contact' }" class="nav-link">Contact</router-link>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                 <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
+                </li> -->
             </ul>
             <div class="form-inline my-2 my-lg-0">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign In</button>
